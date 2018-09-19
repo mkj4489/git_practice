@@ -61,6 +61,10 @@ git merge <リモート名/ブランチ名>
 git merge origin/master 
 ```
 ## コンフリクト
+- コンフリクトが起きにくくするには
+  - 複数人で同じファイルを変更しない
+  - pullやmergeする前に変更中の状態をなくしておく（commitしておく）
+  - pullするときには、pullするブランチに移動してからpullする
 ```
 コンフリクトが起きた場合に確認
 git status
