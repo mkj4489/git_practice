@@ -60,3 +60,11 @@ git merge <リモート名/ブランチ名>
 リモートブランチを作業中のブランチにマージする
 git merge origin/master 
 ```
+## コンフリクト
+```
+コンフリクトが起きた場合に確認
+git status
+コンフリクトしたファイルを修正後
+git add <ファイル名>
+git commit 
+```
