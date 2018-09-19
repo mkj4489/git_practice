@@ -53,3 +53,10 @@ git checkout <既存ブランチ名>
 ブランチを新規作成して切り替える
 git checkout -b <新ブランチ名>
 ```
+## 変更履歴をマージする
+```
+git merge <ブランチ名>
+git merge <リモート名/ブランチ名>
+リモートブランチを作業中のブランチにマージする
+git merge origin/master 
+```
