@@ -113,3 +113,16 @@ git rebase <ブランチ名>
 - プッシュしていないローカルの変更には、rebaseを使い、プッシュした後は、margeを使う
 - コンフリクトしそうなら、マージを使う
 
+## pullの設定をリベースに変更する
+- pullには、マージ型とリベース型が存在する
+- pullのマージ型
+```
+pullのマージ型　マージのコミットが残る
+git pull origin master
+pullのリベース型　マージのコミットが残らない
+git pull --rebase origin master
+pullをリベース型に設定する
+git config --global pull.rebase true
+masterブランチでpullするときのみ設定する
+git config branch.master.rebase true
+```
