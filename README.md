@@ -126,3 +126,15 @@ git config --global pull.rebase true
 masterブランチでpullするときのみ設定する
 git config branch.master.rebase true
 ```
+## コミットを並び替える、削除する
+```
+コミットを３つ変更する（git logを逆の順で表示される。一番上が一番古いコミット）
+git rebase -i HEAD~3
+立ち上がったエディタで、コミットの順番を入れ替えるか、削除したい場合はコミットログを削除する。
+
+コミットを１つにまとめる
+pickの部分を、squashに変更する
+
+コミットを分割する
+pickの部分を、editに変更する
+```
