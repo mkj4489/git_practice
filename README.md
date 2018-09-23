@@ -138,3 +138,30 @@ pickの部分を、squashに変更する
 コミットを分割する
 pickの部分を、editに変更する
 ```
+## タグ
+```
+tagのデータを表示する
+git show <タグ名>
+git show 20180923_01
+tagを追加する
+git tag <タグ名>
+タグをリモートリポジトリに送信する
+git push origin <タグ名>
+```
+## 作業を一時避難する
+```
+ワークツリーとステージの変更をなかったことになる
+git stash
+避難した作業を確認する
+git stash list
+避難した作業を復元する
+最新のを復元
+git stash apply
+特定の作業1を復元する
+git stash apply stash@{1}
+一時避難した作業を削除する
+git stash drop
+特定の作業１を削除する
+git stash drop stash@{1}
+
+```
